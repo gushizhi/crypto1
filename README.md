@@ -1,3 +1,4 @@
+# Shizhi Gu
 # Project Title
 
 DES toy, first coding assignment for CSCI 4230 Cryptography course at RPI.
