@@ -69,3 +69,7 @@ Then open a new terminal tab, run "sender_client.py". After it requires you to e
 
 Next, open another new terminal tab, run "receiver_client.py". You can just enter the new file name, such as "sm.jpg". Then the encrypted smile.jpg will be decrypted into sm.jpg and restored in the folder. Whats
 
+## des.py
+	
+This file is just a test file for DES algorithm. There is no network setup. It simply encrypted a txt file, "in.txt", and then decrypt it, and then output it as "out.txt". Also, it records how much time is used for encryption and decryption. You can feel free to make change to this file to test your own file.
+
