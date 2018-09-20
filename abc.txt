@@ -1,4 +1,0 @@
-from des_supplementary import *
-
-print DES()
-
