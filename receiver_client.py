@@ -23,8 +23,18 @@ i = data.find("X")
 num_zeroes = int(data[i+1:])
 data = data[0:i]
 
-de = decrypt(str_to_blocks(data), num_zeroes)
+cipher = hex(int(data, 2))
+f = open("cipher_text.txt", 'wb')
+f.write(''.join(cipher))
+f.close()
+
+
+blocks = str_to_blocks(data)
+
+de = decrypt(blocks, num_zeroes)
 
 file = raw_input("You are a receiver. We have decrypted the file you received from sender. Please enter the file name you want to save this decrypted file:")
 convertBinaryToFile(de, file)
+
+
 client.close()

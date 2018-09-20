@@ -16,7 +16,7 @@ data = encrypt(m)
 tobesent = ""
 for d in data[0]:
     tobesent += d
-print tobesent
+    
 tobesent += "X"
 tobesent += str(data[1])
 
