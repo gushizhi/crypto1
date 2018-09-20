@@ -4,7 +4,7 @@ import time
 
 start = time.time()
 
-file_in_binary = convertFileToBinary('abc.txt')
+file_in_binary = convertFileToBinary('in.txt')
 
 encrypted_blocks, num_zeroes = encrypt(file_in_binary)
 
@@ -18,7 +18,7 @@ print (mid - start) / 60.
 
 total_decrypted = decrypt(encrypted_blocks, num_zeroes)
 
-convertBinaryToFile(total_decrypted, 'aaaqqq.txt')
+convertBinaryToFile(total_decrypted, 'out.txt')
 
 print "************* !DECRYPTION OVER! *************"
 
